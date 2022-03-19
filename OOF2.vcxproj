@@ -72,25 +72,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
     <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
     <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
     <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
     <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
     <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
@@ -182,7 +182,7 @@
     <ClCompile Include="src\framework\AllocationMetricsTracker.cpp" />
     <ClCompile Include="src\framework\HandyMaths.cpp" />
     <ClCompile Include="src\framework\rendering\EBO.cpp" />
-    <ClCompile Include="src\framework\rendering\glad.c" />
+    <ClCompile Include="src\vendor\glad\glad.c" />
     <ClCompile Include="src\framework\rendering\shaderClass.cpp" />
     <ClCompile Include="src\vendor\imgui\imgui.cpp" />
     <ClCompile Include="src\vendor\imgui\imgui_demo.cpp" />

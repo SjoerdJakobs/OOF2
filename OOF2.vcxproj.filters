@@ -18,7 +18,7 @@
     <ClCompile Include="src\framework\rendering\EBO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\framework\rendering\glad.c">
+    <ClCompile Include="src\vendor\glad\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\framework\rendering\shaderClass.cpp">

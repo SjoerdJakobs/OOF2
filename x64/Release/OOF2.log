@@ -1,1 +1,27 @@
-﻿
+﻿  GameObject.cpp
+  phc.cpp
+  Rectangle.cpp
+  SetUpGlfw.cpp
+  AllocationMetricsTracker.cpp
+  HandyMaths.cpp
+  EBO.cpp
+  shaderClass.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  stb.cpp
+  Texture.cpp
+  VAO.cpp
+  VBO.cpp
+  Main.cpp
+  glad.c
+LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 871 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  OOF2.vcxproj -> D:\C++ProjectsGitVersions\OOF2\x64\Release\OOF2.exe
