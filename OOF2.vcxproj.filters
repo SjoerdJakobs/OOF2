@@ -1,150 +1,173 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="FrameWork">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="FrameWork\Rendering">
+      <UniqueIdentifier>{ae061665-80bb-406c-b05a-7793240066f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\Vendor">
+      <UniqueIdentifier>{54111e75-c2d7-4c5c-b3a6-c3418bd8c591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\Vendor\ImGui">
+      <UniqueIdentifier>{8dcae1e2-a444-4ad8-9f5b-92d2b4bf2d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\Vendor\Glad">
+      <UniqueIdentifier>{47e33ad8-c5f3-4f97-8079-e1a6998f3384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\Vendor\glm">
+      <UniqueIdentifier>{ece39d38-1628-4927-b5c6-ce09663ff197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\Vendor\stb">
+      <UniqueIdentifier>{8b56b27e-b3f9-4f58-a4c1-0a5a4134e27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameWork\other">
+      <UniqueIdentifier>{d366e7eb-9f4f-4d66-8217-13c2654a84d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\framework\rendering\EBO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\vendor\glad\glad.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\shaderClass.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\vendor\stb\stb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\VAO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\VBO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\AllocationMetricsTracker.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\HandyMaths.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\SetUpGlfw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\rendering\Rectangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\framework\GameObject.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\Glad</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_demo.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_draw.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_impl_glfw.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_impl_opengl3.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_tables.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\vendor\imgui\imgui_widgets.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="src\framework\phc.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\framework\rendering\VBO.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\Texture.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\VAO.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\Rectangle.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\SetUpGlfw.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\shaderClass.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\rendering\EBO.cpp">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vendor\stb\stb.cpp">
+      <Filter>FrameWork\Vendor\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\pch.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\GameObject.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\OOF2.cpp">
+      <Filter>FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\HandyMaths.cpp">
+      <Filter>FrameWork\other</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\AllocationMetricsTracker.cpp">
+      <Filter>FrameWork\other</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\framework\rendering\EBO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\shaderClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\VAO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\VBO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\AllocationMetrics.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\AllocationMetricsTracker.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\HandyMaths.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\SetUpGlfw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\framework\rendering\Rectangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\framework\GameObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>FrameWork</Filter>
     </ClInclude>
     <ClInclude Include="src\framework\Component.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imstb_truetype.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imconfig.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imgui.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imgui_impl_glfw.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imgui_impl_opengl3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imgui_internal.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imstb_rectpack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\vendor\imgui\imstb_textedit.h">
-      <Filter>Header Files</Filter>
+      <Filter>FrameWork</Filter>
     </ClInclude>
     <ClInclude Include="src\framework\pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\OOF2.h">
+      <Filter>FrameWork</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imstb_truetype.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imgui.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imgui_impl_glfw.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imgui_impl_opengl3.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClInclude>
     <ClInclude Include="src\vendor\imgui\imgui_impl_opengl3_loader.h">
-      <Filter>Header Files</Filter>
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imgui_internal.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imstb_rectpack.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imstb_textedit.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\EBO.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\VAO.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\VBO.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\Texture.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\shaderClass.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\SetUpGlfw.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\rendering\Rectangle.h">
+      <Filter>FrameWork\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\HandyMaths.h">
+      <Filter>FrameWork\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\AllocationMetricsTracker.h">
+      <Filter>FrameWork\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\AllocationMetrics.h">
+      <Filter>FrameWork\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vendor\imgui\imconfig.h">
+      <Filter>FrameWork\Vendor\ImGui</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

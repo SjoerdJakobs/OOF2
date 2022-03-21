@@ -105,6 +105,7 @@
       <AdditionalIncludeDirectories>ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,6 +126,7 @@
       <AdditionalIncludeDirectories>ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,9 +144,10 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <AdditionalIncludeDirectories>ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -162,9 +165,10 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <AdditionalIncludeDirectories>ImGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -175,8 +179,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\framework\OOF2.cpp" />
     <ClCompile Include="src\framework\GameObject.cpp" />
-    <ClCompile Include="src\framework\phc.cpp" />
+    <ClCompile Include="src\framework\pch.cpp" />
     <ClCompile Include="src\framework\rendering\Rectangle.cpp" />
     <ClCompile Include="src\framework\rendering\SetUpGlfw.cpp" />
     <ClCompile Include="src\framework\AllocationMetricsTracker.cpp" />
@@ -198,6 +203,7 @@
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\framework\OOF2.h" />
     <ClInclude Include="src\framework\Component.h" />
     <ClInclude Include="src\framework\GameObject.h" />
     <ClInclude Include="src\framework\pch.h" />

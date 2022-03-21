@@ -1,5 +1,6 @@
-﻿  GameObject.cpp
-  phc.cpp
+﻿  OOF2.cpp
+  GameObject.cpp
+  pch.cpp
   Rectangle.cpp
   SetUpGlfw.cpp
   AllocationMetricsTracker.cpp
@@ -17,7 +18,10 @@
   Texture.cpp
   VAO.cpp
   VBO.cpp
+  Generating Code...
+  Compiling...
   Main.cpp
   Generating Code...
   glad.c
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   OOF2.vcxproj -> D:\C++ProjectsGitVersions\OOF2\x64\Debug\OOF2.exe

@@ -19,7 +19,7 @@ bool SetUpGlfw::SetUp()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	//create window
-	m_Window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "hello world", NULL, NULL);
+	m_Window = glfwCreateWindow(m_WindowWidth, m_WindowHeight, "hello world", NULL, NULL);
 	//check if window is created
 	if (m_Window == NULL)
 	{
@@ -34,7 +34,7 @@ bool SetUpGlfw::SetUp()
 	gladLoadGL();
 
 	//specify viewport from bottom left
-	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
+	glViewport(0, 0, m_WindowWidth, m_WindowHeight);
 	return true;
 }
 

@@ -5,25 +5,33 @@
 #include"VAO.h"
 #include"VBO.h"
 #include"EBO.h"
-//
-//// Vertices coordinates
-//GLfloat vertices[] =
-//{ //     COORDINATES     /        COLORS      /   TexCoord  //
-//	-0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower left corner
-//	-0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper left corner
-//	 0.5f,  0.5f, 0.0f,     0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper right corner
-//	 0.5f, -0.5f, 0.0f,     1.0f, 1.0f, 1.0f,	1.0f, 0.0f  // Lower right corner
-//};
-//
-//// Indices for vertices order
-//GLuint indices[] =
-//{
-//	0, 2, 1, // Upper triangle
-//	0, 3, 2 // Lower triangle
-//};
+
 
 class Rectangle
 {
+	// Vertices coordinates
+	GLfloat m_Vertices[32];
+
+	// Indices for vertices order
+	GLuint m_Indices[6];
+	Shader m_ShaderProgram;
+	
+	// Generate Vertex Array Object and binds it
+	VAO m_VAO;
+	// Generate Vertex Buffer Object and links it to vertices
+	VBO m_VBO;
+	// Generate Element Buffer Object and links it to indices
+	EBO m_EBO;
+	GLuint m_UniID;
+
+	// Texture
+	Texture m_PopCat;
+
+public:
+	Rectangle();
+	~Rectangle();
+
+	void Draw();
 
 };
 

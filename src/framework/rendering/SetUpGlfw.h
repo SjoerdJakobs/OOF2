@@ -4,9 +4,9 @@
 #include<GLFW/glfw3.h>
 #include<stb/stb_image.h>
 #include <iostream>
-
-constexpr int WINDOW_WIDTH = 800;
-constexpr int WINDOW_HEIGHT = 800;
+//
+//constexpr int m_WindowWidth = 800;
+//constexpr int m_WindowHeight = 800;
 
 class SetUpGlfw final
 {
@@ -17,6 +17,8 @@ public:
 	~SetUpGlfw();
 	bool SetUp();
 	bool CleanUp();
+	const int m_WindowWidth = 800;
+	const int m_WindowHeight = 800;
 
 	GLFWwindow* GetWindow();
 };

@@ -2,7 +2,7 @@
 
 #include<glad/glad.h>
 
-class EBO
+class EBO final
 {
 public:
 	// ID reference of Elements Buffer Object
