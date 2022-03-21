@@ -72,27 +72,27 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Libraries\include\32;$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\32;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Libraries\include\32;$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\32;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Libraries\include\64;$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\64;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>$(ProjectDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Libraries\include\64;$(ProjectDir)Libraries\include;$(ProjectDir)src;$(ProjectDir)src\framework;$(ProjectDir)src\framework\rendering;$(ProjectDir)src\vendor\glm;$(ProjectDir)src\vendor\stb;$(ProjectDir)src\vendor\imgui;$(ProjectDir)src\vendor\glad;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\64;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(ProjectDir)Libraries\lib;$(ProjectDir)Libraries\lib\64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
